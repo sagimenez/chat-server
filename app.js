@@ -6,7 +6,7 @@ const mainRoute = require('./routes/main');
 
 const io = require('socket.io')(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "*.vercel.app",
         methods: ["GET", "POST"]
     }
 });
